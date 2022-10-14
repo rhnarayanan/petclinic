@@ -7,7 +7,7 @@ pipeline {
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-                        sh '/usr/local/bin/helm upgrade --install webapp web  --set image.repository=rhnarayanan/webapp --set image.tag=latest'
+                        sh 'helm upgrade my-app webapp  --install'
               			
             }           
         }
