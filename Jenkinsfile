@@ -8,7 +8,7 @@ pipeline {
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'		     
-                        sh 'helm list'
+                       
 		        
               			
             }           
